@@ -67,9 +67,9 @@
   <!-- Creates the jar file -->
   <target name="jar" depends="compile">
   	<jar destfile="${dist.dir}\${project.name}.jar" basedir="${build.dir}">
-      <zipfileset dir="." includes="plugin.yml"/>
-      <zipfileset dir="." includes="config.yml"/>
-      <zipfileset dir="messages" includes="**/*.txt" prefix="messages"/>
+      <!-- <zipfileset dir="." includes="plugin.yml"/> -->
+      <!-- <zipfileset dir="." includes="config.yml"/> -->
+      <zipfileset dir="localization" includes="**/*.txt" prefix="localization"/>
   	  <!-- This is where you add files to the final jar -->
     </jar>
   </target>
